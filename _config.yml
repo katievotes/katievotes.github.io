@@ -1,1 +1,22 @@
 theme: jekyll-theme-minima
+title: 'Katie Votes - voter information for Minnesota and beyond'
+author: 'Katie'
+publisher: 'Katie'
+description: > # this means to ignore newlines until "show_excerpts:"
+  Voter information for Minnesota and beyond
+plugins:
+ - jekyll-seo-tag
+
+# Minima theme - show excerpts?
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+# Build settings
+theme: minima
+
+# Misc
+twitter_handle_no_at: KatieVotes
