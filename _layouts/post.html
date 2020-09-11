@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% capture thisurlext %}{{ site.url }}{{ page.url }}{% endcapture %}
+
+<div lang="en">
+  <h1 class="singlep-title"><a href="{{ thisurlext }}" title="{{ page.title }}">{{ page.title }}</a></h1>
+  {% if page.image %}
+    <div class="postimgcontainer"><img src="{{ site.url }}/{{ page.image }}" alt="Post Header Image"/></div>
+  {% endif %}
+  {{ content }}
+</div>

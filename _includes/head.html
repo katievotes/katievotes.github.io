@@ -1,0 +1,34 @@
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
+  <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+  <!-- Twitter cards -->
+  <meta name="twitter:site" content="@{{ site.twitter_handle_no_at }}"/>
+  <meta name="twitter:creator" content="@{{ site.twitter_handle_no_at }}"/>
+  {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}"/>
+  {% else %}
+    <meta name="twitter:title" content="{{ site.title }}"/>
+  {% endif %}
+  {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}"/>
+  {% elsif site.description %}
+    <meta name="twitter:description" content="{{ site.description }}"/>
+  {% endif %}
+  {% if page.image %}
+    <meta name="twitter:card"  content="summary_large_image"/>
+    <meta name="twitter:image" content="{{ site.url }}/{{ page.image }}"/>
+  {% else %}
+    <meta name="twitter:card"  content="summary{% if site.title_image %}_large_image{% endif %}">
+    {% if site.title_image %}<meta name="twitter:image" content="{{ site.url }}/{{ site.title_image }}"/>{% endif %}
+  {% endif %}
+  <!-- end of Twitter cards -->
+
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+{% seo %}
+</head>
