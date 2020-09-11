@@ -6,7 +6,9 @@ description: > # this means to ignore newlines until "show_excerpts:"
   Voter information for Minnesota and beyond
 plugins:
  - jekyll-seo-tag
-
+# Hopefully this is how I set the permalink to strip .html
+permalink: /:title/
+ 
 # Minima theme - show excerpts?
 show_excerpts: false # set to true to show excerpts on the homepage
 
