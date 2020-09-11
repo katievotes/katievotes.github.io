@@ -12,7 +12,7 @@ Most of your townships have decided to rely upon mail-in voting, although a hand
 
 Visit [Aitkin county's election web site](https://www.co.aitkin.mn.us/departments/auditor/elections.html){:target="_blank"} and explore the links within to find out which kind of township you're in.
 
-{% include youtube.html width=320 height=240 videoid="tgbNymZ7vqY" videotitle=page.title %}
+{% include youtube.html width=320 height=240 videoid="6xE3dzd1Drs" videotitle=page.title %}
 
 ---
 
